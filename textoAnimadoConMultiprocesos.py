@@ -35,7 +35,7 @@ def crearAnimacion(a, b, char):
 if __name__=='__main__':
     proceso1=multiprocessing.Process(target=crearAnimacion,args=(10,10,'X'))
     proceso2=multiprocessing.Process(target=crearAnimacion,args=(10,30,'Y'))
-    proceso3=multiprocessing.Process(target=crearAnimacion,args=(10,10,'Z'))
+    proceso3=multiprocessing.Process(target=crearAnimacion,args=(10,50,'Z'))
 
     proceso1.start()
     proceso2.start()
@@ -43,6 +43,8 @@ if __name__=='__main__':
     proceso1.join()
     proceso2.join()
     proceso3.join()
+
+   
 
 
 
